@@ -12,6 +12,7 @@ env:
   REGISTRY: docker.io
   SHA: ${{ github.event.pull_request.head.sha || github.event.after }}
   DOCKERFILE_PATH: Dockerfile
+  COMPARE_TAG: latest
 
 jobs:
   build:
