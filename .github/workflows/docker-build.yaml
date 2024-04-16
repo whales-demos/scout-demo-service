@@ -8,7 +8,8 @@ on:
     branches: ["main"]
 
 env:
-  IMAGE_NAME: ""
+  IMAGE_NAME: ${{ github.repository }}
+  REGISTRY: docker.io
   SHA: ${{ github.event.pull_request.head.sha || github.event.after }}
   DOCKERFILE_PATH: Dockerfile
 
